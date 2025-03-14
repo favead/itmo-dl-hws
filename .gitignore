@@ -100,3 +100,7 @@ poetry.lock
 
 # Datasets
 *.csv.gz
+
+# HW 2
+hw2/*
+!hw2/main.ipynb
