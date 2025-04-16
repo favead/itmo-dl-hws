@@ -1,41 +1,30 @@
-[tool.poetry]
+[project]
 name = "itmo-dl-hws"
 version = "1.0.0"
 description = ""
-authors = ["Danil Muranov <danil5678444@gmail.com>"]
+authors = [
+    { name = "Danil Muranov", email = "danil5678444@gmail.com" }
+]
 
-[tool.poetry.dependencies]
-python = "^3.10"
-corus = "^0.10.0"
-ipykernel = "^6.29.5"
-pandas = "^2.2.3"
-matplotlib = "^3.10.0"
-scikit-learn = "^1.6.1"
-nltk = "^3.9.1"
-navec = "^0.10.0"
-gensim = "^4.3.3"
-pymorphy3 = "^2.0.3"
+dependencies = [
+    "corus>=0.10.0",
+    "ipykernel>=6.29.5",
+    "pandas>=2.2.3",
+    "matplotlib>=3.10.0",
+    "scikit-learn>=1.6.1",
+    "nltk>=3.9.1",
+    "navec>=0.10.0",
+    "gensim>=4.3.3",
+    "pymorphy3>=2.0.3",
+    "datasets>=3.5.0",
+    "transformers[torch]>=4.51.2",
+    "seqeval>=1.2.2",
+    "evaluate>=0.4.3",
+    "hf-xet>=1.0.3",
+    "gliner>=0.2.17",
+    "tiktoken>=0.9.0",
+    "sentencepiece>=0.2.0",
+]
 
-[[tool.poetry.source]]
-name = "PyPI"
-priority = "primary"
+requires-python = ">=3.10"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.black]
-line-length = 80
-include = '\.pyi?$'
-exclude = '''
-/(
-	\.git
-| \.hg
-| \.mypy_cache
-| \.tox
-| \.venv
-| _build
-| buck-out
-| build   
-)/ 
-'''
