@@ -104,3 +104,6 @@ poetry.lock
 # HW 2
 hw2/*
 !hw2/main.ipynb
+
+# uv
+uv.lock
