@@ -1,0 +1,4 @@
+bertopic_model
+embeddings.npy
+umap_embeddings.npy
+hdbscan_labels.npy
