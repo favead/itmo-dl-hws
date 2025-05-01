@@ -107,3 +107,6 @@ hw2/*
 
 #uv
 uv.lock
+
+# IDE
+.cursor
