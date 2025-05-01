@@ -8,3 +8,4 @@ merged_dataset.zip
 merged_dataset
 rubert_tiny_mlm
 rubert_tiny_ner
+rubert_tiny_pretrain_mlm_ner

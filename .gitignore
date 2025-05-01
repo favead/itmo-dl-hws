@@ -105,5 +105,8 @@ poetry.lock
 hw2/*
 !hw2/main.ipynb
 
-# uv
+#uv
 uv.lock
+
+# IDE
+.cursor
